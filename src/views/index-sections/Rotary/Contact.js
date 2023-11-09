@@ -16,16 +16,16 @@ function Examples() {
 
               <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif",   }}>CORPORATE OFFICE </p>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0" }}>New # 34 (Old # 42/13), Kothandaraman</p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}>Street, Old Washermenpet, Chennai - 600</p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}>021, Tamil Nadu, India.</p>
+                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}>Street, Old Washermenpet,</p>
+                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}> Chennai - 600021, Tamil Nadu, India.</p>
              
           </Col>
           <Col className="stay-class" lg="4" style={{textAlign:"left"}}>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0" }}>NEED ASSISTANCE?</p>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Call us at </p>
-                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 9444050248</p>
-                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 9789089099</p>
-                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 8897667573</p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Arial, sans-serif", margin: "5px 0", }}>(+91) 9444050248</p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Arial, sans-serif", margin: "5px 0", }}>(+91) 9789089099</p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Arial, sans-serif", margin: "5px 0", }}>(+91) 8897667573</p>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Email us at</p>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>info@arunafh.com</p>
 
