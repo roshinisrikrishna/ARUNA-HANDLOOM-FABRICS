@@ -3,9 +3,9 @@ import { Container, Row, Col, Card } from "reactstrap";
 import CardMedia from '@material-ui/core/CardMedia';
 
 import { motion } from "framer-motion";
-import yarnImage from "assets/img/IKAT7crop.jpg"; // Import the image
-import yarn2Image from "assets/img/IKAT8.png"; // Import the image
-import yarn3Image from "assets/img/IKAT5.png"; // Import the image
+import yarnImage from "assets/img/IKATNEW4.png"; // Import the image
+import yarn2Image from "assets/img/IKATNEW5.png"; // Import the image
+import yarn3Image from "assets/img/IKATNEW6.png"; // Import the image
 import yarn4Image from "assets/img/IKAT3.png"; // Import the image
 import yarn5Image from "assets/img/IKAT1.png"; // Import the image
 
@@ -63,25 +63,15 @@ Ikat is a traditional textile-making technique characterized by tying and dyeing
   <Container>
   <Row>
     <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
+      <img src={yarn2Image} alt="" style={{width:"95%",height:"100%"}} />
     </Col>
     <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn5Image} alt="" style={{width:"97%",height:"84%"}} />
+      <img src={yarn3Image} alt="" style={{width:"95%",height:"100%"}} />
     </Col>
     
   </Row>
 </Container>
-<Container>
-  <Row>
-   
-    <Col lg={6} style={{marginTop:"0%"}} >
-      <img src={yarn4Image} alt="" style={{width:"100%",height:"auto"}} />
-    </Col>
-    <Col lg={6} style={{marginTop:"0%"}} >
-      <img src={yarn3Image} alt="" style={{width:"100%",height:"97.5%"}} />
-    </Col>
-  </Row>
-</Container>
+
 <Container>
   <Row style={{justifyContent: 'space-between'}}>
     <Col xs={6} style={{marginTop:"5%",backgroundColor: "" , justifyContent:"flex-start", alignItems:"flex-start",textAlign:"left"}} >

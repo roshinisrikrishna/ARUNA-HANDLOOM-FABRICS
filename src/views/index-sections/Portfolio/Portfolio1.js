@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText } from "reactstrap";
+import { Container, Row, Col,  } from "reactstrap";
 import { motion } from "framer-motion";
-import CardMedia from '@material-ui/core/CardMedia';
+import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import { useNavigate } from "react-router-dom";
 import yarnImage from "assets/img/Yarn Died1.png"; // Import the image
 import rotaryImage from "assets/img/Rotary4.png"; // Import the image
@@ -31,7 +31,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-function Typography() {
+function Portfolio() {
   const navigate = useNavigate();
   return (
     <div className="main-approach">
@@ -152,12 +152,7 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
       @media only screen and (min-width: 280px) and (max-width: 766px) {.main-col{
         max-width: 90% !important;
       }
-        .hover-card {
-          max-width: 99% !important;
-          position: relative;
-          overflow: hidden;
-          transition: filter 0.3s ease-in-out;
-         }
+       
          .col1-card{
           margin-top: -10% !important;
         }
@@ -182,31 +177,46 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
         .col8-card{
           margin-top: -55% !important;
         }
-         .hover-card::before {
+        .hover-card {
+          position: relative;
+          overflow: hidden;
+        }
+      
+        .hover-card::before {
           content: attr(data-text);
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white; /* Set the color to white */
-          font-weight: bold; /* Make the text bolder */
-          font-size: 28px; /* Increase the font size to 15px */
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          font-family: Raleway, sans-serif;
+          font-weight: bold;
+          font-size: 32px;
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
-         }
-         
-         
-         .hover-card:hover::before {
-          color: white; /* Set the color to white */
+          z-index: 1;
+        }
+      
+        .hover-card:hover::before {
           opacity: 1;
-         }
-         
-         .hover-card:hover {
-          filter: brightness(80%);
-         }
-         .hover-card:hover content{
-          filter: brightness(100%);
-         }
+        }
+      
+        .hover-card > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: filter 0.3s ease-in-out;
+        }
+      
+        .hover-card:hover > img {
+          filter: brightness(50%);
+        }
         .main-approach{
           max-width: 96% !important;
           margin-top: 5% !important;
@@ -277,34 +287,43 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
         .hover-card {
           position: relative;
           overflow: hidden;
-          transition: filter 0.3s ease-in-out;
-         }
-         
-         .hover-card::before {
+        }
+      
+        .hover-card::before {
           content: attr(data-text);
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white; /* Set the color to white */
-          font-weight: bold; /* Make the text bolder */
-          font-size: 28px; /* Increase the font size to 15px */
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          font-family: Raleway, sans-serif;
+          font-weight: bold;
+          font-size: 32px;
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
-         }
-         
-         
-         .hover-card:hover::before {
-          color: white; /* Set the color to white */
+          z-index: 1;
+        }
+      
+        .hover-card:hover::before {
           opacity: 1;
-         }
-         
-         .hover-card:hover {
-          filter: brightness(80%);
-         }
-         .hover-card:hover content{
-          filter: brightness(100%);
-         }
+        }
+      
+        .hover-card > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: filter 0.3s ease-in-out;
+        }
+      
+        .hover-card:hover > img {
+          filter: brightness(50%);
+        }
         .main-approach{
           max-width: 98% !important;
         }
@@ -349,34 +368,43 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
         .hover-card {
           position: relative;
           overflow: hidden;
-          transition: filter 0.3s ease-in-out;
-         }
-         
-         .hover-card::before {
+        }
+      
+        .hover-card::before {
           content: attr(data-text);
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white; /* Set the color to white */
-          font-weight: bold; /* Make the text bolder */
-          font-size: 28px; /* Increase the font size to 15px */
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          font-family: Raleway, sans-serif;
+          font-weight: bold;
+          font-size: 32px;
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
-         }
-         
-         
-         .hover-card:hover::before {
-          color: white; /* Set the color to white */
+          z-index: 1;
+        }
+      
+        .hover-card:hover::before {
           opacity: 1;
-         }
-         
-         .hover-card:hover {
-          filter: brightness(80%);
-         }
-         .hover-card:hover content{
-          filter: brightness(100%);
-         }
+        }
+      
+        .hover-card > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: filter 0.3s ease-in-out;
+        }
+      
+        .hover-card:hover > img {
+          filter: brightness(50%);
+        }
         .approach-img{
           width: 100% !important;
           height: auto !important;
@@ -397,4 +425,4 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
   );
 }
 
-export default Typography;
+export default Portfolio;

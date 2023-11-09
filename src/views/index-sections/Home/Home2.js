@@ -6,6 +6,7 @@ import explore2Image from "assets/img/Image.png"; // Import the image
 import explore3Image from "assets/img/IKATweb.webp"; // Import the image
 import CardMedia from '@material-ui/core/CardMedia';
 import { useNavigate } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 
 
 // Animation variants for fading in elements
@@ -60,30 +61,37 @@ function Typography() {
     title="Logo"
   />
   <CardText style={{ padding:"5%", fontSize: "16px", fontWeight: 400,fontFamily: "Raleway, sans-serif",color: "white", backgroundColor:"#303132",letterSpacing:"0em" }}>
-    KALAMKARI
+    
   </CardText>
 </Card>
 
 </Col> 
 <Col className="home-img-col"  lg={4} style={{padding: "0"}}>
   <Card style={{ background:"transparent",padding: "0", borderRadius:"0px",boxShadow:"none"}}>
-      <CardTitle onClick={()=>navigate('/portfolio')} 
-      style={{
-        cursor:"pointer",
-        ':hover': {
-          cursor: 'pointer'
-        },
-        paddingTop:"20%",
-        color: "black", 
-        background:"transparent",
-        fontFamily: "Times New Roman, sans-serif", 
-        fontSize: "52px", 
-        fontWeight: 500
-        }}>Explore Now</CardTitle>
-    <CardMedia className="card-explore2" style={{paddingTop:"4.5%"}}
+  <Button
+  className="button-explore"
+  onClick={() => navigate("/portfolio")}
+  style={{
+    background: "transparent",
+    color: "black",
+    textTransform:"capitalize",
+    fontFamily: "Times New Roman, sans-serif",
+    fontSize: "52px",
+    fontWeight: 500,
+    padding: "3% 5%",
+    ":hover": {
+      background: "black",
+      color: "white",
+    },
+  }}
+>
+  Explore Now
+</Button>
+
+    <CardMedia className="card-explore2" style={{paddingTop:"2%"}}
       component="img"
       alt="Logo"
-      height="100%"
+      height="50%"
       width="100%" // Set the width to 90%
       image={explore2Image} // Use the imported image
       title="Logo"
@@ -101,7 +109,7 @@ function Typography() {
       title="Logo"
     />
      <CardText style={{padding:"5%",fontSize: "16px", fontWeight: 400, fontFamily: "Raleway, sans-serif",color: "white", backgroundColor:"#303132", letterSpacing:"0em" }}>
-    IKAT
+    
   </CardText>
   </Card>
 </Col> 
@@ -114,7 +122,11 @@ function Typography() {
     
       <style>
         {`
-          
+          .button-explore:hover{
+            background:black !important;
+            color: white !important;
+            
+          }
       /* CSS for screen width 280px to 540px */
       @media only screen and (min-width: 280px) and (max-width: 766px) {
         .main-approach{
@@ -211,22 +223,22 @@ function Typography() {
             }
             @media only screen and (min-width: 1024px) and (max-width: 1200px) {
               .card-explore2{
-                padding-top: 2% !important; 
+                padding-top: 6.6% !important; 
               }
             }
             @media only screen and (min-width: 1200px) and (max-width: 1300px) {
               .card-explore2{
-                padding-top: 6% !important; 
+                padding-top: 11.7% !important; 
               }
             }
             @media only screen and (min-width: 1300px) and (max-width: 1400px) {
               .card-explore2{
-                padding-top: 7% !important; 
+                padding-top: 13.5% !important; 
               }
             }
             @media only screen and (min-width: 1400px)  {
               .card-explore2{
-                padding-top: 7.8% !important; 
+                padding-top: 14.5% !important; 
               }
             }
 

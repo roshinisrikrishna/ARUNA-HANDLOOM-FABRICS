@@ -44,7 +44,7 @@ function Typography() {
     fontFamily: "Raleway, sans-serif",
     maxWidth:"85%"
   }}>
-Rotary print garments boast a distinctive charm, bringing a vibrant fusion of artistry and fashion to the textile realm. The rotary printing technique involves a cylindrical screen that transfers intricate designs onto fabric with unparalleled precision. This method allows for the creation of complex patterns and vivid colors, transforming ordinary garments into wearable works of art. The seamless blending of creativity and craftsmanship in rotary print garments not only enhances aesthetic appeal but also reflects a commitment to quality and attention to detail. Whether adorning casual wear or haute couture, these garments stand as a testament to the seamless integration of technology and tradition in the ever-evolving world of fashion    
+Rotary print garments boast a distinctive charm, bringing a vibrant fusion of artistry and fashion to the textile realm. The rotary printing technique involves a cylindrical screen that transfers intricate designs onto fabric with unparalleled precision. This method allows for the creation of complex patterns and vivid colors, transforming ordinary garments into wearable works of art. 
   </p>
 </Col>
 <Container  style={{ backgroundColor: "" , justifyContent:"center", alignItems:"center",textAlign:"center"}}>

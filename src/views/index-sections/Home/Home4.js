@@ -5,7 +5,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import orvisImage from "assets/img/orvis.webp"; // Import the image
 import corridorImage from "assets/img/corridor (1).webp"; // Import the image
 import jillImage from "assets/img/jill1 (1).webp"; // Import the image
-import unitedcolorImage from "assets/img/unitedcolor (1).webp"; // Import the image
+import unitedcolorImage from "assets/img/scotch 1.png"; // Import the image
 import myerImage from "assets/img/myer1.webp"; // Import the image
 import talbotsImage from "assets/img/talbots1.webp"; // Import the image
 
@@ -75,12 +75,12 @@ function Typography() {
        </Card>
      </Col>
      <Col lg={4}>
-       <Card style={{padding:"4% 4%", borderRadius:"0px"}}>
+       <Card style={{padding:"20.9% 4%", borderRadius:"0px"}}>
        <CardMedia
         component="img"
         alt="Logo"
-        height="100%"
-        width="50%" // Set the width to 100%
+        height="auto"
+        width="100%" // Set the width to 100%
         image={unitedcolorImage} // Use the imported image
         title="Logo"
       />

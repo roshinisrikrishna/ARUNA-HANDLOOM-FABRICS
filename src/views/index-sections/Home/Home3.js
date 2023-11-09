@@ -64,7 +64,7 @@ function Typography() {
           max-width: 96% !important;
         }
         .class-svg{
-          margin-left: 
+          display: none;
         }
           .home2-h1{
             font-size: 23px !important;
@@ -100,6 +100,9 @@ function Typography() {
                  
            }
       @media only screen and (min-width: 767px) and (max-width: 912px) {
+        .class-svg{
+          display: none;
+        }
         .main-home2{
           max-width: 100% !important;
         }

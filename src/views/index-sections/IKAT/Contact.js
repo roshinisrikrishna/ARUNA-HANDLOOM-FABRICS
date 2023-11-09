@@ -2,23 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { FaFacebook, FaTwitter, FaPinterest, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaPinterest, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 
 function Examples() {
   return (
-    <div id="contact" style={{ background:"#303132",color:"#D3D3D3", marginTop:"5%"}}>
+    <div className="contact-home" id="contact" style={{ background:"#303132",color:"#D3D3D3", marginTop:"5%"}}>
       <div className="space-50"></div>
       <Container className="mb-0">
         <Row>
           <Col lg="8"  className="address-column">
             <Row>
-              <Col lg="6">
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif",  }}>CANADIAN OFFICE </p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0" }}>#902, Gazley circle, Milton, Ontario.</p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}>Postal Code: L9T 6L7</p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "0", }}>Phone: +647 - 375 - 3533</p>
-              </Col>
+             
               <Col lg="6">
 
               <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif",   }}>CORPORATE OFFICE </p>
@@ -28,20 +23,25 @@ function Examples() {
               </Col>
             </Row>
           </Col>
-          <Col className="stay-class" lg="4" md="6" style={{textAlign:"right"}}>
+          <Col className="stay-class" lg="4" md="6" style={{textAlign:"left"}}>
           <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif",   }}>STAY CONNECTED</p>
-          <div className="icons-class" style={{ display: "flex", justifyContent: "right", margin:"20px 0" }}>
-            <FaFacebook style={{ marginRight: "20px" }} />
-            <FaTwitter style={{ marginRight: "20px" }} />
-            <FaPinterest style={{ marginRight: "20px" }} />
-            <FaInstagram />
+          <div className="icons-class" style={{ display: "flex", justifyContent: "left", margin:"20px 0" }}>
+          <a href="http://www.linkedin.com/in/aruna-handloom-fabrics-9a1697291" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn style={{ marginRight: "20px", color:"white" }} />
+          </a>
+          <a href="https://www.instagram.com/arunahandloomfabrics/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram style={{  color:"white" }} />
+          </a>
+
           </div>
 
                 <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0" }}>NEED ASSISTANCE?</p>
-                <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Call us at +91 9444050248</p>
-                <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 9789089099</p>
+                <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Call us at </p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 9444050248</p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 9789089099</p>
+                <p className="p-address ml-5 pl-2" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>+91 8897667573</p>
                 <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Email us at</p>
-                <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>info@arunahandlooms.com9</p>
+                <p className="p-address" style={{ fontSize: "13px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>info@arunafh.com</p>
 
           </Col>
 
@@ -65,6 +65,10 @@ function Examples() {
         
         /* CSS for screen width 280px to 540px */
         @media only screen and (min-width: 280px) and (max-width: 766px) {
+          .contact-home{
+            max-width: 100% !important;
+
+          }
           
           .address-column{
             text-align: left !important;
@@ -121,6 +125,10 @@ function Examples() {
           
              }
         @media only screen and (min-width: 767px) and (max-width: 912px) {
+          .contact-home{
+            max-width: 100% !important;
+
+          }
   
           .address-column{
             text-align: left !important;
@@ -129,6 +137,7 @@ function Examples() {
           }
           .p-address{
             font-size: 32px !important;
+            max-width: 100% !important;
           }
           .form-group{
             font-size: 48px !important;

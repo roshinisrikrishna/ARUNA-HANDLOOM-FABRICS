@@ -3,10 +3,11 @@ import { Container, Row, Col, Card } from "reactstrap";
 import CardMedia from '@material-ui/core/CardMedia';
 
 import { motion } from "framer-motion";
-import yarnImage from "assets/img/Pintuck4.png"; // Import the image
-import yarn2Image from "assets/img/Pintucks2.png"; // Import the image
+import yarnImage from "assets/img/pintucknew4.jpg.png"; // Import the image
+import yarn2Image from "assets/img/pintucknew2.jpg.png"; // Import the image
 import yarn3Image from "assets/img/pintucks1.png"; // Import the image
 import yarn4Image from "assets/img/Pintuck3.png"; // Import the image
+import yarn5Image from "assets/img/pintucknew3.jpg.png"; // Import the image
 
 
 import { Link } from "react-router-dom";
@@ -58,12 +59,18 @@ Discover the elegance and versatility of pintuck fabrics. These textiles feature
   </Container>
   <Container>
   <Row>
+  <Col lg={6} style={{marginTop:"5.5%"}}>
+  <div style={{display: 'flex'}}>
+    <img src={yarn2Image} alt="" style={{width:"55%",height:"auto"}} />
+    <img className="ml-1" src={yarn5Image} alt="" style={{width:"43%",height:"auto"}} />
+  </div>
+  <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} />
+
+</Col>
+
     <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
-    </Col>
-    <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} />
-      <img src={yarn4Image} alt="" style={{width:"99%",height:"49%"}} />
+      {/* <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} /> */}
+      <img src={yarn4Image} alt="" style={{width:"100%",height:"100%"}} />
 
     </Col>
   </Row>

@@ -4,7 +4,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 import { motion } from "framer-motion";
 import yarnImage from "assets/img/Kalamkari1crop.jpg"; // Import the image
-import yarn2Image from "assets/img/KK2-P.png"; // Import the image
+import yarn2Image from "assets/img/Kalamkari_new.png"; // Import the image
 import yarn3Image from "assets/img/KK3-P.png"; // Import the image
 import yarn4Image from "assets/img/KK4-P.png"; // Import the image
 import yarn5Image from "assets/img/KK5-P.png"; // Import the image
