@@ -23,6 +23,7 @@ import NavbarShort from "./NavbarShort";
 import SignUp from "views/index-sections/SignUp";
 import { Avatar } from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
+import logo from "../../assets/img/arunahflogo.png";
 
 
 function IndexNavbar() {
@@ -146,6 +147,12 @@ function IndexNavbar() {
     id="navbar-brand"
     style={{ fontSize: "20px", fontWeight: "bold", color: "#d4d4d4", textTransform: "capitalize", letterSpacing:"0.2em" }}
   >
+    <img
+                      src={logo}
+                      alt="Eightfold.ai Logo"
+                      className="navbar-logo"
+                      style={{ width: "60px", height: "auto", marginRight: "5px" }} // Adjust the width as needed
+                    />
      Aruna Handloom Fabrics
   </NavbarBrand>
              
@@ -157,7 +164,7 @@ function IndexNavbar() {
            
             <NavItem>
                 <NavLink to="/" tag={Link} className="nav-link mr-3" style={{  }}>
-                  <p style={{ fontWeight: 400, color: "#d4d4d4",  }}>Home</p>
+                  <p style={{ paddingTop:"8%", fontWeight: 400, color: "#d4d4d4",  }}>Home</p>
                   {/* <p>{userEmail}</p> */}
                   {/* <p>{userProfilePicture}</p> */}
                 </NavLink>
@@ -172,7 +179,7 @@ function IndexNavbar() {
 
               <NavItem>
                 <NavLink to="/portfolio" tag={Link} className="nav-link mr-3" style={{  }}>
-                  <p style={{ fontWeight: 400, color: "#d4d4d4",  }}>Portfolio</p>
+                  <p style={{ paddingTop:"8%",fontWeight: 400, color: "#d4d4d4",  }}>Portfolio</p>
                 </NavLink>
               </NavItem>
               <NavItem>

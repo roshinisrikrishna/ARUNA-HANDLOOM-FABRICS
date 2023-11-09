@@ -26,6 +26,7 @@ import SignUp from "views/index-sections/SignUp";
 import { Avatar } from '@material-ui/core';
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import logo from "../../assets/img/arunahflogo.png";
 
 
 function NavbarShort() {
@@ -195,11 +196,16 @@ function NavbarShort() {
           <Nav navbar style={{ width: "100%" }}>
   <NavItem className={click ? "d-flex align-items-left justify-content-left sticky-border" : "d-flex align-items-left justify-content-left"}>
     <i
-      className={click ? "fas fa-times d-flex align-items-right justify-content-right mr-2 mt-3" : "fas fa-bars d-flex align-items-right justify-content-right mr-2 mt-3"}
+      className={click ? "fas fa-times d-flex align-items-right justify-content-right mr-2 mt-1" : "fas fa-bars d-flex align-items-right justify-content-right mr-2 mt-1"}
       onClick={handleClick}
       style={{ fontSize: "26px", position: "absolute", right: "15px", cursor: "pointer", color: "white" }}
     />
-  <h2 className="navbar-brand-h" style={{color:"white"}}> Aruna Handloom Fabrics</h2>
+  <h2 className="navbar-brand-h" style={{color:"white"}}>   <img
+                      src={logo}
+                      alt="Eightfold.ai Logo"
+                      className="navbar-logo"
+                      style={{ width: "50px", height: "auto" }} // Adjust the width as needed
+                    /> Aruna Handloom Fabrics</h2>
   </NavItem>
   <NavItem className="sticky-border">
  
@@ -340,9 +346,8 @@ function NavbarShort() {
       z-index: 1000; /* Adjust the z-index as needed */
     }
     
-   .navbar-logo-main{
-    font-size: 18px !important;
-    // padding-left: 10% !important;
+   .navbar-logo{
+    padding-left: 2% !important;
    }
 
    .slate-text{
@@ -390,8 +395,7 @@ function NavbarShort() {
       color: white;
     }
     
-    .navbar-logo-main{
-      font-size: 14px !important;
+    .navbar-logo{
      }
    
      .slate-text{
@@ -446,8 +450,7 @@ function NavbarShort() {
       }
 
       @media only screen and (min-width: 1024px) {
-        .navbar-logo-main{
-          font-size: 14px !important;
+        .navbar-logo{
          }
       }
       
