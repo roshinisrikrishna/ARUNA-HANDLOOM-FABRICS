@@ -27,7 +27,7 @@ function Examples() {
                 <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Arial, sans-serif", margin: "5px 0", }}>(+91) 9789089099</p>
                 <p className="p-address ml-5 pl-2" style={{ fontSize: "15px", fontFamily: "Arial, sans-serif", margin: "5px 0", }}>(+91) 8897667573</p>
                 <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>Email us at</p>
-                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>info@arunafh.com</p>
+                <p className="p-address" style={{ fontSize: "15px", fontFamily: "Raleway, sans-serif", margin: "5px 0", }}>info@arunahf.com</p>
 
           </Col>
           <Col className="stay-class" lg="3" style={{textAlign:"center"}}>
@@ -46,7 +46,7 @@ function Examples() {
         </Row>
         <Container className="mt-5" style={{  maxWidth: "100%", padding: '30px 0 0 0' }}>
   <div className="footer-class" style={{ fontSize: "13px", letterSpacing: "1.5px", fontFamily: "Raleway, sans-serif",  textAlign: 'center' }}>
-  © 2023 Aruna Handlooms. All rights reserved.</div>
+  © 2023 Aruna Handloom Fabrics. All rights reserved.</div>
 </Container>
       </Container>     
 *      <style>

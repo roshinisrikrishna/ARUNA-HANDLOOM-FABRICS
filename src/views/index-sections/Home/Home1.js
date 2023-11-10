@@ -170,18 +170,29 @@ function SignUp() {
          @media only screen and (min-width: 1024px) and (max-width: 1200px){
            
           .signup-main{
-            margin-top: 8%;
+            margin-top: 9.2%;
           }
                  
                }
-               @media only screen and (min-width: 1200px){
-           
-                .signup-main{
-                  margin-top: 4%;
-                  max-width: 100% !important;
-                }
-                       
-                     }
+                                  
+                    @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+                      .signup-main{
+                        margin-top: 7.3%;
+                        max-width: 100% !important;
+                      }
+                    }
+                    @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+                      .signup-main{
+                        margin-top: 6.9%;
+                        max-width: 100% !important;
+                      }
+                    }
+                    @media only screen and (min-width: 1400px)  {
+                      .signup-main{
+                        margin-top: 6.5%;
+                        max-width: 100% !important;
+                      }
+                    }
                `}
       </style>
     </div>

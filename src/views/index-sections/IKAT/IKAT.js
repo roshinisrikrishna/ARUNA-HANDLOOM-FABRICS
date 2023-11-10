@@ -3,9 +3,9 @@ import { Container, Row, Col, Card } from "reactstrap";
 import CardMedia from '@material-ui/core/CardMedia';
 
 import { motion } from "framer-motion";
-import yarnImage from "assets/img/IKATNEW4.png"; // Import the image
-import yarn2Image from "assets/img/IKATNEW5.png"; // Import the image
-import yarn3Image from "assets/img/IKATNEW6.png"; // Import the image
+import yarnImage from "assets/img/IKAT1.jpg"; // Import the image
+import yarn2Image from "assets/img/IKAT2.jpg"; // Import the image
+import yarn3Image from "assets/img/IKAT3.jpg"; // Import the image
 import yarn4Image from "assets/img/IKAT3.png"; // Import the image
 import yarn5Image from "assets/img/IKAT1.png"; // Import the image
 
@@ -35,10 +35,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{ marginTop:"-10%" }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "0% 5%" }}>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "0% 5%" }}>
           <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>IKAT</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "27% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "27% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -52,21 +52,19 @@ function Typography() {
 
 Ikat is a traditional textile-making technique characterized by tying and dyeing sections of yarn before they are woven into fabric. The tied sections resist the dye, creating a pattern on the finished cloth. The word "ikat" is derived from the Indonesian and Malaysian word "mengikat," which means "to tie." Ikat textiles are known for their intricate designs and vibrant colors and are used in clothing and home decor items. The technique is widely practiced in several countries, including Indonesia, India, Japan, and South America </p>
 </Col>
-<Container  style={{ backgroundColor: "" , justifyContent:"center", alignItems:"center",textAlign:"center"}}>
-<Col className="" lg={12} style={{height:"10%"}}>
-    <img src={yarnImage} alt="" style={{width:"100%",height:"auto"}} />
- 
-  
-  </Col>
- 
-  </Container>
+
   <Container>
   <Row>
-    <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn2Image} alt="" style={{width:"95%",height:"100%"}} />
+    
+    <Col lg={4} style={{marginTop:"1%"}} >
+      <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
+      </Col>
+      <Col lg={3} style={{marginTop:"1%", textAlign:""}} >
+      <img src={yarnImage} alt="" style={{width:"90%",height:"75%"}} />
     </Col>
-    <Col lg={6} style={{marginTop:"5%"}} >
-      <img src={yarn3Image} alt="" style={{width:"95%",height:"100%"}} />
+      <Col lg={5} style={{marginTop:"1%"}} >
+
+         <img src={yarn3Image} alt="" style={{width:"88%",height:"auto"}} />
     </Col>
     
   </Row>
@@ -236,14 +234,39 @@ Ikat is a traditional textile-making technique characterized by tying and dyeing
           height: auto !important;
           
         }
-        @media only screen and (min-width: 1200px) {
+       
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
+          .main-approach{
+            margin-top: 0% !important;
+          }
+          .sideheading-col{
+            padding: 29% 5% 4% 0% !important;
+          }
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+          .main-approach{
+            margin-top: 3% !important;
+          }
+          .sideheading-col{
+            padding: 20% 5% 4% 1% !important;
+          }
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1400px) {
           .main-approach{
             margin-top: 5% !important;
           }
           .sideheading-col{
-            padding: 19% 5% 4% 13% !important;
+            padding: 19% 5% 4% 1% !important;
           }
-        }       
+        }
+        @media only screen and (min-width: 1400px)  {
+          .main-approach{
+            margin-top: 6% !important;
+          }
+          .sideheading-col{
+            padding: 17% 5% 4% 0% !important;
+          }
+        }          
             }
       
         `}

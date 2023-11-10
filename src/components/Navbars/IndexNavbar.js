@@ -147,12 +147,7 @@ function IndexNavbar() {
     id="navbar-brand"
     style={{ fontSize: "20px", fontWeight: "bold", color: "#d4d4d4", textTransform: "capitalize", letterSpacing:"0.2em" }}
   >
-    <img
-                      src={logo}
-                      alt="Eightfold.ai Logo"
-                      className="navbar-logo"
-                      style={{ width: "60px", height: "auto", marginRight: "5px" }} // Adjust the width as needed
-                    />
+ 
      Aruna Handloom Fabrics
   </NavbarBrand>
              

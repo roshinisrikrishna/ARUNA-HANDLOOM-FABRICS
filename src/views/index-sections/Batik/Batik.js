@@ -34,10 +34,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{  }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "7% 5%" }}>
-          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>BATIK FABRICS</h1>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "7% 5%" }}>
+          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0", textAlign:"right" }}>BATIK FABRICS</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "10% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "10% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -233,14 +233,39 @@ Experience the beauty and richness of batik prints. This traditional Indonesian 
         }
               
             }
-            @media only screen and (min-width: 1200px) {
+         
+            @media only screen and (min-width: 1024px) and (max-width: 1200px){
               .main-approach{
                 margin-top: 5% !important;
               }
               .sideheading-col{
-                padding: 9% 5% 4% 13% !important;
+                padding: 15% 5% 4% 0% !important;
               }
             }
+            @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+              .main-approach{
+                margin-top: 3% !important;
+              }
+              .sideheading-col{
+                padding: 15% 5% 4% 0% !important;
+              }
+            }
+            @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+              .main-approach{
+                margin-top: 2% !important;
+              }
+              .sideheading-col{
+                padding: 14% 5% 4% 0% !important;
+              }
+            }
+            @media only screen and (min-width: 1400px)  {
+              .main-approach{
+                margin-top: 3% !important;
+              }
+              .sideheading-col{
+                padding: 12% 5% 4% 0% !important;
+              }
+            }    
             
       
         `}

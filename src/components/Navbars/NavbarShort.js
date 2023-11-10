@@ -200,12 +200,7 @@ function NavbarShort() {
       onClick={handleClick}
       style={{ fontSize: "26px", position: "absolute", right: "15px", cursor: "pointer", color: "white" }}
     />
-  <h2 className="navbar-brand-h" style={{color:"white"}}>   <img
-                      src={logo}
-                      alt="Eightfold.ai Logo"
-                      className="navbar-logo"
-                      style={{ width: "50px", height: "auto" }} // Adjust the width as needed
-                    /> Aruna Handloom Fabrics</h2>
+  <h2 className="navbar-brand-h" style={{color:"white"}}>    Aruna Handloom Fabrics</h2>
   </NavItem>
   <NavItem className="sticky-border">
  

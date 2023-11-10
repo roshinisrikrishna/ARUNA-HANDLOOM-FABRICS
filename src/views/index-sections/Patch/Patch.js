@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import yarnImage from "assets/img/Patchwork1.jpg"; // Import the image
 import yarn2Image from "assets/img/Patch Work Fabrics2.png"; // Import the image
 import yarn3Image from "assets/img/Patch Work Fabrics3.png"; // Import the image
+import yarn4Image from "assets/img/Patchwork Shorts.jpeg"; // Import the image
+import yarn5Image from "assets/img/Patchwork Shorts 2.jpg"; // Import the image
 
 import { Link } from "react-router-dom";
 
@@ -31,10 +33,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{ marginTop:"-5%" }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "0% 2% 0% 5%" }}>
-          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>Patch Work Fabrics</h1>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "0% 2% 0% 5%" }}>
+          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0",textAlign:"right" }}>Patch Work Fabrics</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "20% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "20% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -61,6 +63,16 @@ Get inspired with our selection of patchwork fabrics! These unique textiles are 
     </Col>
     <Col lg={6} style={{marginTop:"5%"}} >
       <img src={yarn3Image} alt="" style={{width:"96%",height:"80%"}} />
+    </Col>
+  </Row>
+</Container>
+<Container >
+  <Row>
+    <Col lg={5} style={{marginTop:"0%"}} >
+      <img src={yarn4Image} alt="" style={{width:"100%",height:"auto"}} />
+    </Col>
+    <Col lg={7} style={{marginTop:"0%"}} >
+      <img src={yarn5Image} alt="" style={{width:"100%",height:"auto"}} />
     </Col>
   </Row>
 </Container>
@@ -226,14 +238,39 @@ Get inspired with our selection of patchwork fabrics! These unique textiles are 
           height: auto !important;
           
         }
-        @media only screen and (min-width: 1200px) {
+         
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
+          .main-approach{
+            margin-top: 3% !important;
+          }
+          .sideheading-col{
+            padding: 23% 5% 4% 0% !important;
+          }
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
           .main-approach{
             margin-top: 5% !important;
           }
           .sideheading-col{
-            padding: 13% 5% 4% 13% !important;
+            padding: 15% 5% 4% 1% !important;
           }
-        }   
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+          .main-approach{
+            margin-top: 5% !important;
+          }
+          .sideheading-col{
+            padding: 14% 5% 4% 1% !important;
+          }
+        }
+        @media only screen and (min-width: 1400px)  {
+          .main-approach{
+            margin-top: 5% !important;
+          }
+          .sideheading-col{
+            padding: 12% 5% 4% 0% !important;
+          }
+        }       
               
             }
       

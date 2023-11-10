@@ -5,6 +5,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { motion } from "framer-motion";
 import yarnImage from "assets/img/Yarn Died1cropped.jpg"; // Import the image
 import yarn2Image from "assets/img/Yarn Dyed2.png"; // Import the image
+import yarn3Image from "assets/img/Yard Dyed.jpeg"; // Import the image
+import yarn4Image from "assets/img/Yard Dyed2.jpeg"; // Import the image
+
+
 import { Link } from "react-router-dom";
 
 // Animation variants for fading in elements
@@ -29,10 +33,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{  }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "7% 5%" }}>
-          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>Yarn Dyed Fabrics</h1>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "7% 5% 7% 8%" }}>
+          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0", textAlign:"right" }}>Yarn Dyed Fabrics</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "18% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "18% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -54,12 +58,20 @@ function Typography() {
   </Col>
  
   </Container>
-  <Container  style={{ backgroundColor: "" , justifyContent:"center", alignItems:"center",textAlign:"center"}}>
+  
+  <Container>
+  <Row>
+    <Col lg={5} style={{marginTop:"5%"}} >
+      <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
 
-  <Col className="" lg={8} style={{marginTop:"5%"}} >
-    <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
-  </Col>
-  </Container>
+    </Col>
+    <Col lg={7} style={{marginTop:"5%"}} >
+      <img src={yarn3Image} alt="" style={{width:"41%",height:"auto"}} />
+      <img src={yarn4Image} alt="" style={{width:"41%",height:"auto"}} />
+
+    </Col>
+  </Row>
+</Container>
   <Container  style={{ backgroundColor: "" , justifyContent:"flex-end", alignItems:"flex-end",textAlign:"right"}}>
 
 {/* <Col className="" lg={1} style={{marginTop:"5%"}} > */}
@@ -68,6 +80,7 @@ function Typography() {
 
 {/* </Col> */}
 </Container>
+
 
       </Row>
 
@@ -218,10 +231,28 @@ function Typography() {
           height: auto !important;
           
         }
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
           .main-approach{
-            margin-top: 4% !important;
+            margin-top: -5% !important;
           }
+          .sideheading-col{
+            padding: 27% 5% 4% 13% !important;
+          }
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+          .main-approach{
+            margin-top: -2% !important;
+          }
+          .sideheading-col{
+            padding: 18% 5% 4% 13% !important;
+          }
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+          .sideheading-col{
+            padding: 12% 5% 4% 13% !important;
+          }
+        }
+        @media only screen and (min-width: 1400px)  {
           .sideheading-col{
             padding: 12% 5% 4% 13% !important;
           }

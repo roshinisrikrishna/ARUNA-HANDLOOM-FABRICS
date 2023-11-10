@@ -12,7 +12,7 @@ import yarn6Image from "assets/img/KK6-P.png"; // Import the image
 import yarn7Image from "assets/img/KK7-P.png"; // Import the image
 import yarn8Image from "assets/img/Kalamkari 2.png"; // Import the image
 import yarn9Image from "assets/img/Kalamkari 4.png"; // Import the image
-import yarn10Image from "assets/img/Kalamkari3.png"; // Import the image
+import yarn10Image from "assets/img/Kalamkari3.jpg"; // Import the image
 
 
 
@@ -42,10 +42,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{ marginTop:"-10%" }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "0% 5%" }}>
-          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>KALAMKARI</h1>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "0% 5%" }}>
+          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0", textAlign:"right" }}>KALAMKARI</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "28% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "28% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -79,11 +79,11 @@ Kalamkari is a traditional Indian textile art form that involves hand-painting o
 
 <Container className="mt-3">
   <Row>
-    <Col lg={6} style={{marginTop:"0%"}} >
-      <img src={yarn9Image} alt="" style={{width:"100%",height:"auto"}} />
+    <Col lg={6} style={{marginTop:"0%",textAlign:"right"}} >
+      <img src={yarn9Image} alt="" style={{width:"82%",height:"auto"}} />
     </Col>
     <Col lg={6} style={{marginTop:"0%"}} >
-      <img src={yarn10Image} alt="" style={{width:"100%",height:"99%"}} />
+      <img src={yarn10Image} alt="" style={{width:"100%",height:"auto"}} />
     </Col>
   </Row>
 </Container>
@@ -250,14 +250,39 @@ Kalamkari is a traditional Indian textile art form that involves hand-painting o
           height: auto !important;
           
         }
-        @media only screen and (min-width: 1200px) {
+        
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
+          .main-approach{
+            margin-top: 0% !important;
+          }
+          .sideheading-col{
+            padding: 30% 5% 4% 0% !important;
+          }
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+          .main-approach{
+            margin-top: 3% !important;
+          }
+          .sideheading-col{
+            padding: 21% 5% 4% 0% !important;
+          }
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1400px) {
           .main-approach{
             margin-top: 5% !important;
           }
           .sideheading-col{
-            padding: 18% 5% 4% 13% !important;
+            padding: 18% 5% 4% 0% !important;
           }
-        }  
+        }
+        @media only screen and (min-width: 1400px)  {
+          .main-approach{
+            margin-top: 5% !important;
+          }
+          .sideheading-col{
+            padding: 18% 5% 4% 0% !important;
+          }
+        }    
             }
       
         `}

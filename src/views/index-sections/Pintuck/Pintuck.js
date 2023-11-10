@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import yarnImage from "assets/img/pintucknew4.jpg.png"; // Import the image
 import yarn2Image from "assets/img/pintucknew2.jpg.png"; // Import the image
 import yarn3Image from "assets/img/pintucks1.png"; // Import the image
-import yarn4Image from "assets/img/Pintuck3.png"; // Import the image
-import yarn5Image from "assets/img/pintucknew3.jpg.png"; // Import the image
+import yarn4Image from "assets/img/pintucks_main (1).jpg"; // Import the image
+import yarn5Image from "assets/img/pintucknew1.jpg"; // Import the image
 
 
 import { Link } from "react-router-dom";
@@ -34,10 +34,10 @@ function Typography() {
     <div className="main-approach" id="about-us" style={{maxWidth:"100%"}}>
       <Row style={{  }}>
       
-        <Col className="approach-col d-flex align-items-center justify-content-center" lg={4} style={{ backgroundColor: "#FFF", padding: "0% 5% 0% 7%" }}>
-          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0" }}>Pintuck Fabrics</h1>
+        <Col className="approach-col d-flex align-items-center justify-content-center" lg={5} style={{ backgroundColor: "#FFF", padding: "0% 5% 0% 7%" }}>
+          <h1 className="approach-h2" style={{ color: "#D3D3D3", fontFamily: "Raleway, sans-serif", fontSize: "56px", fontWeight: 700, margin: "0", padding: "0",textAlign:"right" }}>Pintuck Fabrics</h1>
         </Col>
-        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={8} style={{ backgroundColor: "#FFF", padding: "18% 5% 4% 13%" }}>
+        <Col className="sideheading-col d-flex align-items-center justify-content-center" lg={7} style={{ backgroundColor: "#FFF", padding: "18% 5% 4% 13%" }}>
   <p className="approach-p" style={{ 
     color: "#303132", 
     fontSize: "20px", 
@@ -59,18 +59,38 @@ Discover the elegance and versatility of pintuck fabrics. These textiles feature
   </Container>
   <Container>
   <Row>
-  <Col lg={6} style={{marginTop:"5.5%"}}>
-  <div style={{display: 'flex'}}>
+  <Col lg={6} style={{marginTop:"4.5%"}}>
+  {/* <div style={{display: 'flex'}}>
     <img src={yarn2Image} alt="" style={{width:"55%",height:"auto"}} />
     <img className="ml-1" src={yarn5Image} alt="" style={{width:"43%",height:"auto"}} />
-  </div>
+  </div> */}
   <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} />
 
 </Col>
 
-    <Col lg={6} style={{marginTop:"5%"}} >
+    <Col lg={6} style={{marginTop:"4.8%"}} >
       {/* <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} /> */}
-      <img src={yarn4Image} alt="" style={{width:"100%",height:"100%"}} />
+      <img src={yarn4Image} alt="" style={{width:"92%",height:"auto"}} />
+
+
+    </Col>
+  </Row>
+</Container>
+<Container>
+  <Row>
+  <Col lg={7} style={{marginTop:"4.5%"}}>
+  {/* <div style={{display: 'flex'}}>
+    <img src={yarn2Image} alt="" style={{width:"55%",height:"auto"}} />
+    <img className="ml-1" src={yarn5Image} alt="" style={{width:"43%",height:"auto"}} />
+  </div> */}
+  <img src={yarn2Image} alt="" style={{width:"100%",height:"auto"}} />
+
+</Col>
+
+    <Col lg={5} style={{marginTop:"4%"}} >
+      {/* <img src={yarn3Image} alt="" style={{width:"100%",height:"auto"}} /> */}
+      <img src={yarn5Image} alt="" style={{width:"90%",height:"auto"}} />
+
 
     </Col>
   </Row>
@@ -238,14 +258,39 @@ Discover the elegance and versatility of pintuck fabrics. These textiles feature
           height: auto !important;
           
         }
-        @media only screen and (min-width: 1200px) {
+      
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
           .main-approach{
-            margin-top: 5% !important;
+            margin-top: 0% !important;
           }
           .sideheading-col{
-            padding: 13% 5% 4% 13% !important;
+            padding: 22% 5% 4% 0% !important;
           }
-        }   
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+          .main-approach{
+            margin-top: 0% !important;
+          }
+          .sideheading-col{
+            padding: 18% 5% 4% 1% !important;
+          }
+        }
+        @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+          .main-approach{
+            margin-top: -3% !important;
+          }
+          .sideheading-col{
+            padding: 19% 5% 4% 1% !important;
+          }
+        }
+        @media only screen and (min-width: 1400px)  {
+          .main-approach{
+            margin-top: 0% !important;
+          }
+          .sideheading-col{
+            padding: 16% 5% 4% 0% !important;
+          }
+        }       
             }
       
         `}

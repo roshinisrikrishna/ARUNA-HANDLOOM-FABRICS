@@ -5,7 +5,7 @@ import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import { useNavigate } from "react-router-dom";
 import yarnImage from "assets/img/Yarn Died1.png"; // Import the image
 import rotaryImage from "assets/img/Rotary4.png"; // Import the image
-import pintuckImage from "assets/img/Pintuck4.png"; // Import the image
+import pintuckImage from "assets/img/pintucknew4.jpg.png"; // Import the image
 import patchImage from "assets/img/Patchwork1.jpg"; // Import the image
 import ikatImage from "assets/img/IKAT7.png"; // Import the image
 import KnittedImage from "assets/img/Knitted 1.png"; // Import the image
@@ -160,10 +160,10 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
           margin-top: -15% !important;
         }
         .col3-card{
-          margin-top: -15% !important;
+          margin-top: -19% !important;
         }
         .col4-card{
-          margin-top: -25% !important;
+          margin-top: -11% !important;
         }
         .col5-card{
           margin-top: -20% !important;
@@ -267,10 +267,10 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
           margin-top: -15% !important;
         }
         .col3-card{
-          margin-top: -15% !important;
+          margin-top: -19% !important;
         }
         .col4-card{
-          margin-top: -25% !important;
+          margin-top: -11% !important;
         }
         .col5-card{
           margin-top: -20% !important;
@@ -411,7 +411,7 @@ Welcome to our portfolio. Here you’ll find a selection of our work. Explore ou
           
         }
         .col1-card,.col2-card,.col3-card,.col4-card,.col5-card,.col6-card{
-          margin-top: -10% !important;
+          margin-top: -8% !important;
         }
         .col7-card,.col8-card{
           margin-top: -17% !important;
